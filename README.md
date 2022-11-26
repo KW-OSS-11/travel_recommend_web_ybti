@@ -19,7 +19,18 @@ ex) 다양한 API를 이용해 추가 시스템 구축
 ## 💁 사용 가이드 💁 (신아 백엔드 설정과정)
 
 ### 사전 준비
-  * 어떤 에디터를 사용하면 좋은
+* Java 11 설치 (가급적 JDK 11 버전을 설치해주세요. 다른 버전을 설치하면 정상 동작하지 않을 가능성이 높습니다)
+* IntelliJ 설치
+   
+등록된 파일들을 모두 받은 후, build.gradle 파일로 프로젝트 열기
+File -> Setting에 들어간 후, 검색창에 gradle 검색 후, Build and run 창에서 Gradle -> IntelliJ IDEA로 변경(2개) <br>
+밑에 있는 Gradle 칸에서 Gradle JVM을 java version 11로 되어있는지 확인
+ 
+ * 프로젝트 JDK 설정
+ File -> Project Structure 들어간 후, Project SDK가 version 11로 되어있는지 확인 <br>
+ 새로 설치했다면, 설치한 자바 11로 지정해줍니다.
+
+
   * 파일 경로 
 
 ## ‼ License ‼
