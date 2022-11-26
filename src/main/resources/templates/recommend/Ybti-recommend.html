@@ -1,0 +1,148 @@
+<!--TBTI를 입력받고 추천 여행지들 띄워주는 페이지-->
+
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Small Business - Start Bootstrap Template</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="../../../css/Ybti-recommend_styles.css" rel="stylesheet" />
+</head>
+
+<body>
+<!-- Responsive navbar-->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container px-5">
+        <!-- Ybti의 결과창-->
+        <a class="navbar-brand" href="#!">Ybti</a>
+        <form action="/ybti-select/go_home" method="post">
+            <button type="submit" class="kakao">홈으로</button>
+        </form>
+    </div>
+</nav>
+<!-- Page Content-->
+<div class="container px-4 px-lg-5">
+    <!-- Heading Row-->
+    <!-- 900 X 400 img -->
+    <div class="row gx-4 gx-lg-5 align-items-center my-5">
+        <center>
+            <div class="col-lg-5">
+                <h2 class="font-weight-light">
+<!--                    <td th:text="|축하합니다!! 당신의 YBTI는 '${ybti}' 입니다|"></td>-->
+                    <td th:text="|${ybti_name}|"></td>
+                    <br>
+                </h2>
+<!--                <p>여bti, 해당 여bti 설명문</p>-->
+                <!--            <a class="btn btn-primary" href="#!">Call to Action!</a>-->
+            </div>
+
+            <div class="col-lg-7">
+                <img class="img-fluid rounded mb-4 mb-lg-0"
+                     th:src="|@{../../img/ybti/}${ybti}.jpg|"
+                     alt="..." />
+            </div>
+
+            <h4>
+                <td th:text="|${ybti_desc}|"></td>
+            </h4>
+
+        </center>
+    </div>
+
+    <!-- Content Row-->
+    <div class="row gx-4 gx-lg-5">
+        <div class="col-md-4 mb-5">
+            <div class="card h-100">
+                <div class="card-body">
+                    <center>
+                        <h2 class="card-title">추천 여행지 Best1</h2>
+                        <td th:text="|'${best1_nation}'의 '${best1_city}' 입니다!|"></td>
+                        <div class="col-lg-11">
+                            <img class="img-fluid rounded mb-4 mb-lg-0"
+                                 th:src="|@{../../img/cityimg/}${best1_index}.jpg|"
+                                 style= "width:340px; height:220px"
+                                 alt="..." />
+                        </div>
+<!--                        <p class="card-text">결과로 나온 여행지에 대한 설명문 (이것도 나라별로 있고 그것을 따로 불러와야하나??)</p>-->
+                    </center>
+                </div>
+                <!-- 활용도가 잘하면 있을 것 같아서 남겨두었다. -->
+                <div class="card-footer"><a class="btn btn-primary btn-sm" href="#!">More Info</a></div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-5">
+            <div class="card h-100">
+                <div class="card-body">
+                    <center>
+                        <h2 class="card-title">추천 여행지 Best2</h2>
+                        <td th:text="|'${best2_nation}'의 '${best2_city}' 입니다!|"></td>
+                        <div class="col-lg-11">
+                            <img class="img-fluid rounded mb-4 mb-lg-0"
+                                 th:src="|@{../../img/cityimg/}${best2_index}.jpg|"
+                                 style= "width:340px; height:220px"
+                                 alt="..." />
+                        </div>
+<!--                        <p class="card-text">결과로 나온 여행지에 대한 설명문 (이것도 나라별로 있고 그것을 따로 불러와야하나??)</p>-->
+                    </center>
+                </div>
+                <div class="card-footer"><a class="btn btn-primary btn-sm" href="#!">More Info</a></div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-5">
+            <div class="card h-100">
+                <div class="card-body">
+                    <center>
+                        <h2 class="card-title">추천 여행지 Best3</h2>
+                        <td th:text="|'${best3_nation}'의 '${best3_city}' 입니다!|"></td>
+                        <div class="col-lg-11">
+                            <img class="img-fluid rounded mb-4 mb-lg-0"
+                                 th:src="|@{../../img/cityimg/}${best3_index}.jpg|"
+                                 style= "width:340px; height:220px"
+                                 alt="..." />
+                        </div>
+<!--                        <p class="card-text">결과로 나온 여행지에 대한 설명문 (이것도 나라별로 있고 그것을 따로 불러와야하나??)</p>-->
+                    </center>
+                </div>
+                <div class="card-footer"><a class="btn btn-primary btn-sm" href="#!">More Info</a></div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Footer-->
+<footer class="py-5 bg-dark">
+    <div class="container px-4 px-lg-5"><p class="m-0 text-center text-white">Copyright &copy; Your Website 2022</p></div>
+</footer>
+<!-- Bootstrap core JS-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Core theme JS-->
+<script src="js/scripts.js"></script>
+<script src="./js/ybti/data.js" charset="utf-8"></script>
+<script src="./js/ybti/start.js?ver=1" charset="utf-8"></script>
+<script src="./js/city.js" charset="utf-8"></script>
+</body>
+</html>
+
+<!--<!DOCTYPE HTML>-->
+<!--<html xmlns:th="http://www.thymeleaf.org">-->
+<!--<body>-->
+<!--<div class="container">-->
+<!--    <form action="/tbti-select/go_home" method="post">-->
+<!--        <div>-->
+<!--            <h1>TBTI 추천 여행지 1</h1>-->
+<!--        </div>-->
+<!--        <div class="form-group">-->
+<!--            <label for="name">유럽</label>-->
+<!--            <input type="text" id="name" name="name" placeholder="홈으로 가기">-->
+<!--        </div>-->
+<!--        <button type="submit">홈으로</button>-->
+<!--    </form>-->
+<!--</div> &lt;!&ndash; /container &ndash;&gt;-->
+<!--</body>-->
+<!--</html>-->

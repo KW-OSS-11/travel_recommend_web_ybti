@@ -1,0 +1,115 @@
+<!--MBTI를 입력받는 페이지-->
+
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>MBTI 추출 페이지</title>
+    <link rel="icon" type="image/x-icon" href="./img/favicon.ico" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/mbti/default.css">
+    <link rel="stylesheet" href="./css/mbti/main.css">
+    <link rel="stylesheet" href="./css/mbti/qna.css">
+    <link rel="stylesheet" href="./css/mbti/animation.css">
+    <link rel="stylesheet" href="./css/mbti/result.css?ver=1">
+</head>
+
+<body>
+<div class="container">
+    <section id="main" class="mx-auto my-5 py-5 px-3">
+        <h1>나의 MBTI는 뭘까?</h1>
+
+        <p>
+            <br>
+        </p>
+
+        <div class="col-lg-6 col-md-8 col-sm-10 col-12 mx-auto my-7">
+            <img src="./img/mbtiimg.png"
+                 style= "width:512px; height:176px"
+                 alt="mainImage" class="img-fluid">
+        </div>
+
+        <p>
+            <br>
+        </p>
+
+        <p>
+            MBTI란? 나의 여행성향!<br>
+            당신의 여행성향을 한 단어로 정리해 드립니다<br>
+            아래 start 버튼을 눌러 시작해 주십시오.
+        </p>
+        <button type="button" class="btn btn-outline-dark mt-3" onclick="js:begin()">start</button>
+        <a href="/">
+            <button type="button" class="btn btn-outline-dark mt-3" onclick="js:bkhome()">홈으로</button>
+        </a>
+    </section>
+    <section id="qna">
+        <div class="status mx-auto mt-5">
+            <div class="statusBar">
+            </div>
+        </div>
+        <div class="qBox my-5 py-3 mx-auto">
+
+        </div>
+        <div class="answerBox">
+
+        </div>
+    </section>
+    <section id="result" class="mx-auto my-5 py-5 px-3">
+        <h1>당신의 MBTI는?!</h1>
+        <div class="resultname">
+
+        </div>
+        <div id="resultImg" class="my-3 col-lg-6 col-md-8 col-sm-10 col-12 mx-auto">
+
+        </div>
+        <div class="resultDesc">
+
+        </div>
+
+        <a href="/mbti-select">
+            <button type="button" class="kakao mx-2 mt-3 py-2 px-3" onclick="">다시 검사하기</button>
+        </a>
+
+<!--        이 버튼 누르면 문자열 전송-->
+        <button type="button" class="kakao mt-3 py-2 px-3" onclick="js:transfer()">여행지 추천 받기</button>
+
+        <a href="/">
+            <button type="button" class="kakao mx-2 mt-3 py-2 px-3" onclick="">홈으로</button>
+        </a>
+
+<!--        <form action="/mbti-select/result" method="post" name="login_form">-->
+<!--            <button type="submit" class="kakao mt-3 py-2 px-3" onclick="">-->
+<!--                여행지 추천 받기(지울 것)-->
+<!--            </button>-->
+<!--        </form>-->
+    </section>
+    <script src="./js/mbti/data.js?ver=1" charset="utf-8"></script>
+    <script src="./js/mbti/start.js?ver=1" charset="utf-8"></script>
+    <script src="./js/city.js" charset="utf-8"></script>
+</div>
+</body>
+
+</html>
+
+<!--<!DOCTYPE HTML>-->
+<!--<html xmlns:th="http://www.thymeleaf.org">-->
+<!--<body>-->
+<!--<div class="container">-->
+<!--    <form action="/mbti-select/result" method="post">-->
+<!--        <div class="form-group">-->
+<!--            <label for="mbti">MBTI</label>-->
+<!--            <input type="text" id="mbti" name="mbti" placeholder="MBTI를 입력하세요">-->
+<!--        </div>-->
+<!--        <button type="submit">완료</button>-->
+<!--    </form>-->
+<!--</div> &lt;!&ndash; /container &ndash;&gt;-->
+<!--</body>-->
+<!--</html>-->

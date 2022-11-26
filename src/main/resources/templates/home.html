@@ -1,0 +1,219 @@
+<!--첫화면, 홈페이지-->
+
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>자신만의 여행지를 알아보세요</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/home_styles.css" rel="stylesheet" />
+</head>
+<body id="page-top">
+<!-- Navigation-->
+<nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
+    <div class="container">
+        <a class="navbar-brand" href="#page-top">여행지 추천</a>
+        <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            Menu
+            <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ms-auto">
+                <!-- 오른쪽 상단 버튼에 추가항목 조정파트 -->
+                <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#portfolio">Select Type</a></li>
+                <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact">Team Member Information</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- Masthead-->
+<header class="masthead bg-primary text-white text-center">
+    <div class="container d-flex align-items-center flex-column">
+        <!-- Masthead Avatar Image-->
+        <img class="masthead-avatar mb-5" src="img/비행기.png" alt="..." />
+        <!-- Masthead Heading-->
+        <h2 class="masthead-heading text-uppercase mb-0">자신만의 여행지를 찾아보세요!</h2>
+        <!-- Icon Divider-->
+        <div class="divider-custom divider-light">
+            <div class="divider-custom-line"></div>
+            <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+            <div class="divider-custom-line"></div>
+        </div>
+
+<!--        <script>-->
+<!--        var abc=123-->
+<!--            function search(type,type2){-->
+<!--                location.href="search?type="+type+"&type2=type"+type2;-->
+<!--&lt;!&ndash;                search?type=1&type2=2 &ndash;&gt;-->
+<!--            }-->
+<!--        </script>-->
+
+<!--        <button type="button" onclick="js:aaa()">조</button>-->
+<!--        <button type="button" th:myName="js:aaa()" th:onclick="search('myName', 2)">조회</button>-->
+<!--        <button type="button" onclick="search(1, 2)">조회2</button>-->
+<!--        <button type="button" onclick="search('js:aaa()', 2)">조회3</button>-->
+
+        <!-- Masthead Subheading-->
+    </div>
+</header>
+<!-- Portfolio Section-->
+<section class="page-section portfolio" id="portfolio">
+    <div class="container">
+        <!-- Portfolio Section Heading-->
+        <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">여행지를 추천해주는 방식을 선택하세요!</h2>
+        <!-- Icon Divider-->
+        <div class="divider-custom">
+            <div class="divider-custom-line"></div>
+            <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+            <div class="divider-custom-line"></div>
+        </div>
+        <!-- Portfolio Grid Items-->
+        <div class="row justify-content-center">
+
+            <!-- Portfolio Item 1-->
+            <!--MBTI 링크타고 다음페이지로 이동-->
+            <div class="col-md-6 col-lg-4 mb-5">
+                <a href="/mbti-select">
+                    <img class="img-fluid" src="img/mbt.png" alt="..." />
+                </a>
+                <p class="lead mb-0" style="text-align:center;">
+                    </br>
+                    <h4 class="text-uppercase mb-4"> MBTI 방식 한 줄 요약 :D </h4>
+                    </br>
+                    <h5 class="text-uppercase mb-4">자신의 MBTI 입력 시 추천 여행지 Best 1~3</h5>
+                </p>
+            </div>
+
+            <!-- Portfolio Item 2-->
+            <!--여BTI 링크타고 다음페이지로 이동-->
+            <div class="col-md-6 col-lg-4 mb-5">
+                <a href="/ybti-select">
+                    <img class="img-fluid" src="img/ybt.png" alt="..." />
+                </a>
+                <p class="lead mb-0" style="text-align:center;">
+                    </br>
+                    <h4 class="text-uppercase mb-4"> YBTI 방식 한 줄 요약 :D </h4>
+                    </br>
+                    <h5 class="text-uppercase mb-4"> 자신의 YBTI 알아본 후 추천 여행지 Best 1~3</h5>
+                </p>
+                <!--수정 3-->
+                <p class="lead mb-0" style="text-align:center;">
+                    </br>
+                    <hr>
+                    <h6 class="text-uppercase mb-4"> ※ 여기서 잠깐! YBTI란?</h6>
+                    <h6 class="text-uppercase mb-4"> 여행 성격 유형 검사로 자신만의 여행 관련 MBTI입니다.</h6>
+                </p>
+            </div>
+
+            <!-- Portfolio Item 3-->
+            <!--Random 링크타고 다음페이지로 이동-->
+            <div class="col-md-6 col-lg-4 mb-5">
+                <a href="/random-recommend">
+                    <img class="img-fluid" src="img/Random.png" alt="..." />
+                </a>
+                <p class="lead mb-0" style="text-align:center;">
+                    </br>
+                    <h4 class="text-uppercase mb-4"> Random 방식 한 줄 요약 :D </h4>
+                    </br>
+                    <h5 class="text-uppercase mb-4"> 9개의 랜덤 여행지 중에 한 곳으로 떠나보아요!  </h5>
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- About Section-->
+
+<!-- 삭제 -->
+<!-- Contact Section-->
+<section class="page-section" id="contact">
+    <div class="container">
+        <!-- Contact Section Heading-->
+        <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Information</h2>
+        <!-- Icon Divider-->
+        <div class="divider-custom">
+            <div class="divider-custom-line"></div>
+            <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+            <div class="divider-custom-line"></div>
+        </div>
+        <!-- Footer-->
+        <footer class="footer text-center">
+            <div class="container">
+                <div class="row">
+                    <!-- Footer Location-->
+                    <div class="col-lg-4 mb-5 mb-lg-0">
+                        <p class="lead mb-0">
+                            <h4 class="text-uppercase mb-4">Class</h4>
+                            Kwangwoon University
+                            <br />
+                            OSS class
+                        </p>
+                    </div>
+                    <!-- Footer Location-->
+                    <div class="col-lg-4">
+                        <h4 class="text-uppercase mb-4">Member</h4>
+                        <p class="lead mb-0">
+                            Lee Shin-A
+                            <br />
+                            Jeong Hyeon-Ki
+                            <br />
+                            Kim Chan-Jin
+                            <br />
+                            Lee Hyun-Kyu
+                        </p>
+                    </div>
+                    <!-- Footer About Text-->
+                    <div class="col-lg-4">
+                        <h4 class="text-uppercase mb-4">About Freelancer</h4>
+                        <p class="lead mb-0">
+                            Freelance is a free to use, MIT licensed theme created by
+                            <a href="https://github.com/KW-OSS-11/travel_recommend_web_ybti">OSS 11조 github </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Copyright Section-->
+        <div class="copyright py-4 text-center text-white">
+            <div class="container"><small>Copyright &copy; Your Website 2022</small></div>
+        </div>
+
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/home_scripts.js"></script>
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <!-- * *                               SB Forms JS                               * *-->
+        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+</body>
+</html>
+
+
+<!--<!DOCTYPE HTML>-->
+<!--<html xmlns:th="http://www.thymeleaf.org">-->
+<!--<body>-->
+<!--<div class="container">-->
+<!--    <div>-->
+<!--        <h1>홈 화면</h1>-->
+<!--        <p>메뉴 선택</p>-->
+<!--        <p>-->
+<!--            <a href="/ybti-select">여bti</a>-->
+<!--            <a href="/mbti-select">MBTI</a>-->
+<!--        </p>-->
+<!--    </div>-->
+<!--</div> &lt;!&ndash; /container &ndash;&gt;-->
+<!--</body>-->
+<!--</html>-->

@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Small Business - Start Bootstrap Template</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="../../../css/Ybti-recommend_styles.css" rel="stylesheet" />
+</head>
+
+<body>
+<!-- Responsive navbar-->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container px-5">
+        <!-- Mbti의 결과창-->
+        <a class="navbar-brand" href="#!">Mbti</a>
+        <form action="/mbti-select/go_home" method="post">
+            <button type="submit" class="kakao">홈으로</button>
+        </form>
+    </div>
+</nav>
+<!-- Page Content-->
+<!--<div class="container px-4 px-lg-5">-->
+<!--    &lt;!&ndash; Heading Row&ndash;&gt;-->
+<!--    &lt;!&ndash; 900 X 400 img &ndash;&gt;-->
+<!--    <div class="row gx-4 gx-lg-5 align-items-center my-5">-->
+<!--        <div class="col-lg-7">-->
+<!--            &lt;!&ndash;            <img class="img-fluid rounded mb-4 mb-lg-0" src="../../../img/mbti.png" alt="..." />&ndash;&gt;-->
+<!--            <img class="img-fluid rounded mb-4 mb-lg-0" th:src="|@{../../../img/}${mbti}.png|" alt="..." />-->
+<!--        </div>-->
+<!--        <div class="col-lg-5">-->
+<!--            <h1 class="font-weight-light">-->
+<!--                <td th:text="|당신의 MBTI는 '${mbti}' 입니다|"></td>-->
+<!--            </h1>-->
+<!--            <p>Mbti, 해당 Mbti 설명문</p>-->
+<!--            <a class="btn btn-primary" href="#!">Call to Action!</a>-->
+<!--        </div>-->
+<!--    </div>-->
+
+<style type="text/css">
+.myimage {
+<!--    style="max-width: 100%; height: auto;"-->
+width=50; height=50
+}
+</style>
+
+<script>
+    function getCityName(randnum) {
+        return cities[randnum].cityKorean;
+    }
+    ${randnum[0]}
+    js:getCityName(${randnum[0]})
+</script>
+
+    <!-- Content Row-->
+    <div class="row gx-4 gx-lg-5">
+        <div class="col-md-4 mb-5">
+            <div class="card h-100">
+                <div class="card-body">
+                    <center>
+                        <h4 class="card-title">
+                            <td th:text="|추천 여행지 1 : '${rand_nation[0]}'의 '${rand_city[0]}' 입니다|"></td>
+                        </h4>
+                        <div class="col-lg-11 myimage">
+                            <img class="img-fluid rounded mb-4 mb-lg-0"
+                                 th:src="|@{img/cityimg/}${rand_num[0]}.jpg|"
+                                 style= "width:420px; height:300px"
+                                 alt="..." />
+                        </div>
+                    </center>
+<!--                    <p class="card-text">결과로 나온 여행지에 대한 설명문 (이것도 나라별로 있고 그것을 따로 불러와야하나??)</p>-->
+                </div>
+                <!-- 활용도가 잘하면 있을 것 같아서 남겨두었다. -->
+                <div class="card-footer"><a class="btn btn-primary btn-sm" href="#!">More Info</a></div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-5">
+            <div class="card h-100">
+                <div class="card-body">
+                    <center>
+                        <h4 class="card-title">
+                            <td th:text="|추천 여행지 2 : '${rand_nation[1]}'의 '${rand_city[1]}' 입니다|"></td>
+                        </h4>
+                        <div class="col-lg-11">
+                            <img class="myimage img-fluid rounded mb-4 mb-lg-0"
+                                 th:src="|@{img/cityimg/}${rand_num[1]}.jpg|"
+                                 style= "width:420px; height:300px"
+                                 alt="..." />
+                        </div>
+                    </center>
+<!--                    <p class="card-text">결과로 나온 여행지에 대한 설명문 (이것도 나라별로 있고 그것을 따로 불러와야하나??)</p>-->
+                </div>
+                <div class="card-footer"><a class="btn btn-primary btn-sm" href="#!">More Info</a></div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-5">
+            <div class="card h-100">
+                <div class="card-body">
+                    <center>
+                        <h4 class="card-title">
+                            <td th:text="|추천 여행지 3 : '${rand_nation[2]}'의 '${rand_city[2]}' 입니다|"></td>
+                        </h4>
+                        <div class="col-lg-11">
+                            <img class="img-fluid rounded mb-4 mb-lg-0"
+                                 th:src="|@{img/cityimg/}${rand_num[2]}.jpg|"
+                                 style= "width:420px; height:300px"
+                                 alt="..." />
+                        </div>
+                    </center>
+<!--                    <p class="card-text">결과로 나온 여행지에 대한 설명문 (이것도 나라별로 있고 그것을 따로 불러와야하나??)</p>-->
+                </div>
+                <div class="card-footer"><a class="btn btn-primary btn-sm" href="#!">More Info</a></div>
+            </div>
+        </div>
+    </div>
+    <div class="row gx-4 gx-lg-5">
+        <div class="col-md-4 mb-5">
+            <div class="card h-100">
+                <div class="card-body">
+                    <center>
+                        <h4 class="card-title">
+                            <td th:text="|추천 여행지 4 : '${rand_nation[3]}'의 '${rand_city[3]}' 입니다|"></td>
+                        </h4>
+                        <div class="col-lg-11">
+                            <img class="img-fluid rounded mb-4 mb-lg-0"
+                                 th:src="|@{img/cityimg/}${rand_num[3]}.jpg|"
+                                 style= "width:420px; height:300px"
+                                 alt="..." />
+                        </div>
+                    </center>
+<!--                    <p class="card-text">결과로 나온 여행지에 대한 설명문 (이것도 나라별로 있고 그것을 따로 불러와야하나??)</p>-->
+                </div>
+                <!-- 활용도가 잘하면 있을 것 같아서 남겨두었다. -->
+                <div class="card-footer"><a class="btn btn-primary btn-sm" href="#!">More Info</a></div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-5">
+            <div class="card h-100">
+                <div class="card-body">
+                    <center>
+                        <h4 class="card-title">
+                            <td th:text="|추천 여행지 5 : '${rand_nation[4]}'의 '${rand_city[4]}' 입니다|"></td>
+                        </h4>
+                        <div class="col-lg-11">
+                            <img class="img-fluid rounded mb-4 mb-lg-0"
+                                 th:src="|@{img/cityimg/}${rand_num[4]}.jpg|"
+                                 style= "width:420px; height:300px"
+                                 alt="..." />
+                        </div>
+                    </center>
+<!--                    <p class="card-text">결과로 나온 여행지에 대한 설명문 (이것도 나라별로 있고 그것을 따로 불러와야하나??)</p>-->
+                </div>
+                <div class="card-footer"><a class="btn btn-primary btn-sm" href="#!">More Info</a></div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-5">
+            <div class="card h-100">
+                <div class="card-body">
+                    <center>
+                        <h4 class="card-title">
+                            <td th:text="|추천 여행지 6 : '${rand_nation[5]}'의 '${rand_city[5]}' 입니다|"></td>
+                        </h4>
+                        <div class="col-lg-11">
+                            <img class="img-fluid rounded mb-4 mb-lg-0"
+                                 th:src="|@{img/cityimg/}${rand_num[5]}.jpg|"
+                                 style= "width:420px; height:300px"
+                                 alt="..." />
+                        </div>
+                    </center>
+<!--                    <p class="card-text">결과로 나온 여행지에 대한 설명문 (이것도 나라별로 있고 그것을 따로 불러와야하나??)</p>-->
+                </div>
+                <div class="card-footer"><a class="btn btn-primary btn-sm" href="#!">More Info</a></div>
+            </div>
+        </div>
+    </div>
+    <div class="row gx-4 gx-lg-5">
+        <div class="col-md-4 mb-5">
+            <div class="card h-100">
+                <div class="card-body">
+                    <center>
+                        <h4 class="card-title">
+                            <td th:text="|추천 여행지 7 : '${rand_nation[6]}'의 '${rand_city[6]}' 입니다|"></td>
+                        </h4>
+                        <div class="col-lg-11">
+                            <img class="img-fluid rounded mb-4 mb-lg-0"
+                                 th:src="|@{img/cityimg/}${rand_num[6]}.jpg|"
+                                 style= "width:420px; height:300px"
+                                 alt="..." />
+                        </div>
+                    </center>
+<!--                    <p class="card-text">결과로 나온 여행지에 대한 설명문 (이것도 나라별로 있고 그것을 따로 불러와야하나??)</p>-->
+                </div>
+                <!-- 활용도가 잘하면 있을 것 같아서 남겨두었다. -->
+                <div class="card-footer"><a class="btn btn-primary btn-sm" href="#!">More Info</a></div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-5">
+            <div class="card h-100">
+                <div class="card-body">
+                    <center>
+                        <h4 class="card-title">
+                            <td th:text="|추천 여행지 8 : '${rand_nation[7]}'의 '${rand_city[7]}' 입니다|"></td>
+                        </h4>
+                        <div class="col-lg-11">
+                            <img class="img-fluid rounded mb-4 mb-lg-0"
+                                 th:src="|@{img/cityimg/}${rand_num[7]}.jpg|"
+                                 style= "width:420px; height:300px"
+                                 alt="..." />
+                        </div>
+                    </center>
+<!--                    <p class="card-text">결과로 나온 여행지에 대한 설명문 (이것도 나라별로 있고 그것을 따로 불러와야하나??)</p>-->
+                </div>
+                <div class="card-footer"><a class="btn btn-primary btn-sm" href="#!">More Info</a></div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-5">
+            <div class="card h-100">
+                <div class="card-body">
+                    <center>
+                        <h4 class="card-title">
+                            <td th:text="|추천 여행지 9 : '${rand_nation[8]}'의 '${rand_city[8]}' 입니다|"></td>
+                        </h4>
+                        <div class="col-lg-11">
+                            <img class="img-fluid rounded mb-4 mb-lg-0"
+                                 th:src="|@{img/cityimg/}${rand_num[8]}.jpg|"
+                                 style= "width:420px; height:300px"
+                                 alt="..." />
+                        </div>
+                    </center>
+<!--                    <p class="card-text">결과로 나온 여행지에 대한 설명문 (이것도 나라별로 있고 그것을 따로 불러와야하나??)</p>-->
+                </div>
+                <div class="card-footer"><a class="btn btn-primary btn-sm" href="#!">More Info</a></div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Footer-->
+<footer class="py-5 bg-dark">
+    <div class="container px-4 px-lg-5"><p class="m-0 text-center text-white">Copyright &copy; Your Website 2022</p></div>
+</footer>
+<!-- Bootstrap core JS-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Core theme JS-->
+<script src="js/city.js"></script>
+</body>
+</html>
