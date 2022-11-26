@@ -22,7 +22,7 @@ ex) 다양한 API를 이용해 추가 시스템 구축
 * Java 11 설치 (가급적 JDK 11 버전을 설치해주세요. 다른 버전을 설치하면 정상 동작하지 않을 가능성이 높습니다)
 * IntelliJ 설치
    
-등록된 파일들을 모두 받은 후, build.gradle 파일로 프로젝트 열기 <br>
+등록된 파일들을 모두 받고, 새로운 파일을 만들어서 그곳에 다 저장을 한 후, build.gradle 파일로 프로젝트 열기 <br>
 File -> Setting에 들어간 후, 검색창에 gradle 검색 후, Build and run 창에서 Gradle -> IntelliJ IDEA로 변경(2개) <br>
 밑에 있는 Gradle 칸에서 Gradle JVM을 java version 11로 되어있는지 확인 <br>
  
