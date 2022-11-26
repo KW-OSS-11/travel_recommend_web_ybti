@@ -16,7 +16,7 @@
 ex) 자신만의 알고리즘을 코드로 녹여내어 추천 방식을 수정  
 ex) 다양한 API를 이용해 추가 시스템 구축 
 
-## 💁 사용 가이드 💁 (신아 백엔드 설정과정)
+## 💁 사용 가이드 💁 
 
 ### 사전 준비
 * Java 11 설치 (가급적 JDK 11 버전을 설치해주세요. 다른 버전을 설치하면 정상 동작하지 않을 가능성이 높습니다)
@@ -30,8 +30,15 @@ File -> Setting에 들어간 후, 검색창에 gradle 검색 후, Build and run 
  File -> Project Structure 들어간 후, Project SDK가 version 11로 되어있는지 확인 <br>
  새로 설치했다면, 설치한 자바 11로 지정해줍니다.
 
-
   * 파일 경로 
+src/main/java/oss/project/controller -> java, controller 파일들 <br>
+src/main/resources/templates -> html 파일들 <br>
+src/main/resources/templates/static/js -> js 파일들 <br>
+src/main/resources/templates/static/css -> css 파일들 <br>
+src/main/resources/templates/static/img -> 이미지 파일들 <br>
+
+* 실행 방법
+로컬 컴퓨터에서 실행 시, main 파일에서 run 버튼을 누른 후. localhost:8080 에 접근하면 실행 가능합니다
 
 ## ‼ License ‼
 
